@@ -1,96 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebAssignment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="home"><a href="#"><i class="fa fa-home"></i> <span>Logo</span></a></li>
+                <li class="globe"><a href="#"><i class="fa fa-globe"></i></a></li>
+                <li class="friends"><a href="#"><i class="material-icons">people</i></a></li>
+                <li class="envelope"><a href="#"><i class="fa fa-envelope"></i></a></li>
+                <li class="bell">
+                    <a href="#"><i class="fa fa-bell"></i></a>
+                    <section class="notifications">
+                        <p>One new friend request</p>
+                        <p>Liza Soberano posted on your wall</p>
+                        <p>Nadine likes your post</p>
+                    </section>
+                </li> 
+                <li class="search">
+                    <a href="#">
+                        <i class="fa fa-search"></i> Search here...
+                    </a>
+                </li>
+                             
+                <li class="user"><a href="#"><i class="fa fa-user-circle"></i></a></li>
+            </ul>
+            
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="xoxo">
+                <i class="fas fa-bars"></i>  
+            </label>
+
+            <aside class="mobile-menu">
+                <ul>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">My Profile</a></li>
+                </ul>
+            </aside>
+        </nav>
+    </header>
+
+    <main class="container">
+        <aside class="left-column">
+            <section class="box profile-box">
+                <h2 class="my-profile">Enrique Gil</h2>
+                <figure>
+                    <img src="Pictures/Enrique.jpg" alt="Profile Picture" class="profile-img">
+                </figure>
+                <hr class="profile-divider">
+                <section class="profile-info">
+                    <ul>
+                        <li><i class="fas fa-pencil-alt"></i><span>Basketball Player</span></li>
+                        <li><i class="fas fa-home"></i><span>Zone-3 Carmen Cagayan de Oro</span></li>
+                        <li><i class="fas fa-birthday-cake"></i><span>January 1,2000</span></li>
+                    </ul>
+                </section>
+            </section>
+        
+            <section class="box menu-box">
+                <ul>
+                    <li><i class="fas fa-circle-notch"></i> My Groups</li>
+                    <li><i class="fas fa-camera"></i> My Photos</li>
+                    <li><i class="fas fa-users"></i> My Friends</li>
+                </ul>
+            </section>
+
+            <section class="box interests-box">
+                <h3 class="interests-title">Interests</h3>
+                <section class="tags">
+                    <span class="tag dota-tag">Dota</span>
+                    <span class="tag malupiton-tag">Malupiton</span>
+                    <span class="tag congtv-tag">Cong TV</span>
+                    <span class="tag games-tag">Games</span>
+                    <span class="tag nba-tag">NBA</span>
+                    <span class="tag games2-tag">747</span>
+                    <span class="tag boytapang-tag">Boy Tapang</span>
+                    <span class="tag food-tag">Food</span>
+                    <span class="tag design-tag">ML</span>
+                    <span class="tag art-tag">Art</span>
+                    <span class="tag photos-tag">Photos</span>
+                </section>
+            </section>
+
+            <input type="checkbox" id="close-notification" class="close-checkbox">
+            <section class="box notification-box">
+                <h3 class="notification-title">Hello Welcome Back!</h3>
+                <p>People are looking at your profile. Find out who.</p>
+                <label for="close-notification" class="close-btn">&times;</label>
+            </section>
+        </aside>
+        
+        <section class="center-column">
+            <article class="box status-box">
+                <p class="template-info">This Social Media recreated by Kirk Ivan Sinadjan</p>
+                <input type="text" class="status-input" placeholder="Lambingin mo naman ako :(">
+                <button class="post-btn"><i class="fas fa-pencil-alt"></i> Post</button>
+            </article>
+
+            <article class="box post-box">
+                <header class="post-header">
+                    <figure class="profile">
+                        <img src="Pictures/Enrique.jpg" alt="Profile Picture" class="profile-pic">
+                        <figcaption class="post-author">Enrique Gil</figcaption>
+                    </figure>
+                    <time class="post-time">7 mins</time>
+                </header>
+                <hr class="post-divider">
+                <p class="post-text">
+                    "Exploring the world hand in hand 🌍❤️ #CoupleGoals #TravelTogether"
+                </p>
+                <section class="post-images">
+                    <figure>
+                        <img src="Pictures/couple2.jpg" alt="LizQuen">
+                    </figure>
+                    <figure>
+                        <img src="Pictures/couple.jpg" alt="LizQuen Couple">
+                    </figure>
+                </section>
+                <footer class="post-actions">
+                    <div class="like-container">
+                        <button class="action-button like-button">
+                            👍 Like
+                        </button>
+                        <div class="reactions">
+                            <span class="reaction">❤️</span>
+                            <span class="reaction">😂</span>
+                            <span class="reaction">😮</span>
+                            <span class="reaction">😢</span>
+                            <span class="reaction">😡</span>
+                        </div>
+                    </div>
+                    <button class="comment-button"><i class="fas fa-comment"></i> Comment</button>
+                    <button class="share-button"><i class="fas fa-share"></i> Share</button>
+                </footer>
+            </article>
+
+            <article class="box post-box-liza">
+                <header class="post-header-liza">
+                    <figure class="profile-liza">
+                        <img src="Pictures/liza.jpg" alt="Profile Picture" class="profile-pic-liza">
+                        <figcaption class="post-author-liza">Liza Soberano</figcaption>
+                    </figure>
+                    <time class="post-time-liza">16 mins</time>
+                </header>
+                <hr class="post-divider-liza">
+                <p class="post-text-jane">
+                    Drinks flowing, music blasting, and laughter never-ending. A night out with friends is always a story to remember. Here's to good vibes and even better company.❤️🍷
+                </p>
+                <section class="post-images-liza">
+                    <figure>
+                        <img src="Pictures/lizafriends.jpg" alt="lizafriends">
+                    </figure>
+                </section>
+                <footer class="post-actions-liza">
+                    <div class="like-container">
+                        <button class="action-button like-button">
+                            👍 Like
+                        </button>
+                        <div class="reactions">
+                            <span class="reaction">❤️</span>
+                            <span class="reaction">😂</span>
+                            <span class="reaction">😮</span>
+                            <span class="reaction">😢</span>
+                            <span class="reaction">😡</span>
+                        </div>
+                    </div>
+                    <button class="comment-button-liza"><i class="fas fa-comment"></i> Comment</button>
+                    <button class="share-button-liza"><i class="fas fa-share"></i> Share</button>
+                </footer>
+            </article>
+
+            <article class="box post-box-maris">
+                <header class="post-header-maris">
+                    <figure class="profile-maris">
+                        <img src="Pictures/maris.jpg" alt="Profile Picture" class="profile-pic-maris">
+                        <figcaption class="post-author">Maris Racal</figcaption>
+                    </figure>
+                    <time class="post-time-maris">32 mins</time>
+                </header>
+                <hr class="post-divider-maris">
+                <p class="post-text-maris">
+                    It was such nice to be with them #incognito🥰😎
+                </p>
+                <section class="post-images-maris">
+                    <figure>
+                        <img src="Pictures/incognito2.avif" alt="Incognito">
+                    </figure>
+                </section>
+                <p class="post-anothertext-anjie">
+                    Grateful to be surrounded by such talented and inspiring artists. Your creativity and passion push me to grow every day. Here's to supporting and uplifting each other always💖🫰
+                </p>
+                <footer class="post-actions-maris">
+                    <div class="like-container">
+                        <button class="action-button like-button">
+                            👍 Like
+                        </button>
+                        <div class="reactions">
+                            <span class="reaction">❤️</span>
+                            <span class="reaction">😂</span>
+                            <span class="reaction">😮</span>
+                            <span class="reaction">😢</span>
+                            <span class="reaction">😡</span>
+                        </div>
+                    </div>
+                    <button class="comment-button-maris"><i class="fas fa-comment"></i> Comment</button>
+                    <button class="share-button-maris"><i class="fas fa-share"></i> Share</button>
+                </footer>
+            </article>
+            
+        </section>
+        
+        <aside class="right-column">
+            <article class="box upcoming-events-box">
+                <h3 class="upcoming-title">Upcoming Events:</h3>
+                <figure class="event-image">
+                    <img src="Pictures/liza2.jpg" alt="Event Image">
+                </figure>
+                <section class="event-details">
+                    <p class="event-title">Birthday ni Crush</p>
+                    <p class="event-time">Monday Feb-29</p>
+                </section>
+                <footer class="event-footer">
+                    <button class="info-button">Info</button>
+                </footer>
+            </article>
+
+            <section class="box friend-request-box">
+                <h2 class="friend-request-title">Friend Request</h2>
+                <figure class="request-profile">
+                    <img src="Pictures/mikha2.jpg" alt="Mikha">
+                    <figcaption class="request-name">Bini Mikha</figcaption>
+                </figure>
+                <footer class="request-actions">
+                    <button class="accept-btn"><i class="fas fa-check"></i></button>
+                    <button class="decline-btn"><i class="fas fa-times"></i></button>
+                </footer>
+            </section>
+
+            <section class="box ads-box">
+                <h2 class="ads-title">ADS</h2>
+            </section>
+            
+            <section class="box icon-box">
+                <img src="Pictures/ishowspeed.gif" alt="Advertisement GIF" class="ads-gif">
+            </section>
+            
+            
+        </aside>        
+    </main>
+
+    <footer class="footer">
+        <div class="footer-top">
+           
+        </div>
+        <div class="footer-bottom"></div>
+       
+    </footer>
+</body>
 </html>
